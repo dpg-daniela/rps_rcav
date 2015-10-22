@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+
+  get("/",        { :controller => "rps", :action => "rock" })
+
+  get("/paper",   { :controller => "rps", :action => "paper" })
+  
+  get("/rock",   { :controller => "rps", :action => "rock" })
+
+  get("/scissors",   { :controller => "rps", :action => "scissors" })
+
+
+end
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +67,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
